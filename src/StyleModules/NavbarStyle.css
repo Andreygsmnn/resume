@@ -1,0 +1,130 @@
+@font-face{
+    font-family: 'main';
+    src: url('./fonts/SanfranLight.woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+  .myButton{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+     appearance: none;
+     border: 0;
+     border-radius: 0;
+     background: #ccc;
+}
+
+.header{
+    padding:2% 10% 2% 10%;
+    font-family: 'main'; 
+}
+.navbar{
+    display:flex;
+    justify-content:flex-end;
+    font-family: 'main'; 
+}
+
+.navbarItem{
+    padding: 0 10px;
+   
+}
+.myButton{
+  min-width: 140px;  
+  border-radius: 5px;
+  background:rgba(16, 85, 214);
+  color:white;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.myButton:hover{
+    background-color:  rgba(211, 229, 22, 0.7);
+    transition: all 0.5s;
+}
+.myButton:focus{
+  outline: none;
+  box-shadow: 0 0 0 4px rgb(28, 160, 222);
+}
+#menu, .label-menu{
+  display:none;
+}
+.navbar-mobile{
+  display:none;
+  position: fixed;
+  top:40px;
+  right:16px;
+  max-height:0;
+  font-size:0;
+  transition: all 0.5s;
+}
+.button-mobile{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+     appearance: none;
+     border: 0;
+     border-radius: 0;
+     background: #ccc;
+     
+}
+.zero{
+  text-decoration: none;
+}
+
+
+@media screen and (max-width:910px){
+  .navbar{
+    display:none;
+  }
+  .label-menu{
+    display:block;
+    position:fixed;
+    top:0;
+    right:0;
+    height:8%;
+    width: 10%;
+    cursor:pointer;
+    line-height: 40px;
+    z-index:2;
+  }
+  
+  .burger-line{
+    position:fixed;
+    top: 12px;
+    right:16px;
+    width:35px;
+    height:2px;
+    background-color: white;
+    
+  }
+  .second, .third{
+    top:22px;
+  }
+  .four{
+    top:32px;
+  }
+  #menu:checked ~ .navbar-mobile{
+       display:block;
+       max-height:100px;
+       font-size:12px;      
+ }
+
+ .button-mobile{
+     display:block;
+     font-size: 12px;
+     width: 140px;
+     border-radius: 5px;
+     background:rgba(16, 85, 214);
+     color:white;
+     margin: 2px 0px;
+ }
+ .button-mobile:hover{
+  background-color:  rgba(211, 229, 22, 0.7);
+  transition: all 0.5s;
+}
+.button-mobile:focus{
+  outline: none;
+  box-shadow: 0 0 0 2px rgb(28, 160, 222);
+}
+  
+}
