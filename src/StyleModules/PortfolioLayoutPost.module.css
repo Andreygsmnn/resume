@@ -1,47 +1,45 @@
-@font-face{
-    font-family: 'main';
-    src: url('./fonts/SanfranLight.woff');
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  
-    
-  
-  .postContainer{
+.postContainer {
    padding: 10px 30px 10px 30px;
-   display:flex;
+   display: flex;
    flex-direction: column;
-   align-items:center; 
-   color:rgb(234, 219, 219);
-   font-family: 'main';
+   align-items: center;
+   color: rgb(234, 219, 219);
 }
-.title{
+
+.title {
    font-size: 20px;
    background-color: rgba(78, 121, 186, 50%);
    border-radius: 40%;
-   padding:20px;
+   padding: 20px;
+   transition: all 0.3s ease;
 }
-.title:hover{
+
+.title:hover {
    background-color: rgba(211, 229, 22, 0.7);
-   transition: 3s;
+
 }
-.description{
-    padding: 2%;
-    background-color: rgba(78, 121, 186, 50%);
-    border-radius: 40%;
-    padding:20px;
-}
-.description:hover{
-   background-color: rgba(211, 229, 22, 0.7);
-   transition: 3s;
-}
-.reference{
+
+.description {
+   padding: 2%;
    background-color: rgba(78, 121, 186, 50%);
    border-radius: 40%;
-   padding:20px;
+   padding: 20px;
+   transition: all .3s ease-in;
 }
-.reference:hover{
+
+.description:hover {
    background-color: rgba(211, 229, 22, 0.7);
-   transition: 3s;
+
+}
+
+.reference {
+   background-color: rgba(78, 121, 186, 50%);
+   border-radius: 40%;
+   padding: 20px;
+   transition: all .3s ease-in;
+}
+
+.reference:hover {
+   background-color: rgba(211, 229, 22, 0.7);
+
 }

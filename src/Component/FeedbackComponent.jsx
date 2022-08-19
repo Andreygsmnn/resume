@@ -1,5 +1,6 @@
 import React from 'react';
 import {Form} from 'react-bootstrap';
+
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import classes from '../StyleModules/FeedbackComponent.module.css'
@@ -14,7 +15,6 @@ function FeedbackComponent() {
 
     emailjs.sendForm('service_b2705ul', 'service_b2705ul', e.target, 'uXUbgSL7g9pJAN5no')
       .then((result) => {
-        console.log(result.text)
         Swal.fire(
           'Данные отправлены!',
           'До связи!',

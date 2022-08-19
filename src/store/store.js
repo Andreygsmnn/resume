@@ -6,7 +6,7 @@ const store = {
             id: 1,
             title: 'Текущий действующий сайт',
             description: 'Сайт сделан на React, подключен API emailJS. Логики не много. Сайт на хостинге, планируется дописать к нему админ панель, подключить Redux.',
-            reference: 'Ссылка на GitHub: '
+            reference: 'Ссылка на GitHub: https://github.com/Andreygsmnn/resume.git '
         },
     ],
     layouts: [
@@ -17,7 +17,6 @@ const store = {
         },
        
     ]
-   
 }
 
 export default store;
