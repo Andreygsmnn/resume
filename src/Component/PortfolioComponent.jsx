@@ -6,9 +6,8 @@ import classes from '../StyleModules/PortfolioComponent.module.css';
 
 function PortfolioComponent() {
 
-
     return (
-        <div >
+        < >
             <div className={classes.buttons}>
                 <div className={classes.buttonsItem}>
                     <NavLink to='/portfolio/react'>
@@ -21,7 +20,7 @@ function PortfolioComponent() {
                     </NavLink>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

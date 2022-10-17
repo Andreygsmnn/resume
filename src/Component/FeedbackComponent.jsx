@@ -1,6 +1,5 @@
 import React from 'react';
 import {Form} from 'react-bootstrap';
-
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import classes from '../StyleModules/FeedbackComponent.module.css'
@@ -8,7 +7,6 @@ import classes from '../StyleModules/FeedbackComponent.module.css'
 
 
 function FeedbackComponent() {
-
 
   const sendMessage = (e) => {
     e.preventDefault()
